@@ -15,3 +15,8 @@ ComponentReference is an Addressables extension to store AssetReference via Comp
 Imagine you have some service creates Overlay from prefab list by generic type parameter. 
 ![type-check](https://github.com/cyberaslan/Addressables-ComponentReference-with-DerivedClass/assets/87382541/39003127-3c08-4d51-81a1-67153a1e7386)
 Concrete overlay class inherits BaseOverlay but <b>ComponentReference\<ConcreteOverlay\></b> is always not <b>ComponentReference\<BaseOverlay\></b> cause generic-types specific.
+
+# Solution
+![okay](https://github.com/cyberaslan/Addressables-ComponentReference-with-DerivedClass/assets/87382541/f0c9bf5e-2b07-45d2-acef-dc7522f4ce17)
+1. Realise <b>IComponentReference</b> interface in BaseClass
+2. Get derived ConcreteClass type attached to prefab by <b>GetDerivedComponentType()</b> method.
