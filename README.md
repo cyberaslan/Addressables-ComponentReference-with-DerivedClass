@@ -17,6 +17,6 @@ Imagine you have some service creates Overlay from prefab list by generic type p
 Concrete overlay class inherits BaseOverlay but <b>ComponentReference\<ConcreteOverlay\></b> is always not <b>ComponentReference\<BaseOverlay\></b> cause generic-types specific.
 
 # Solution
-![okay](https://github.com/cyberaslan/Addressables-ComponentReference-with-DerivedClass/assets/87382541/f0c9bf5e-2b07-45d2-acef-dc7522f4ce17)
+![okay](https://github.com/cyberaslan/Addressables-ComponentReference-with-DerivedClass/assets/87382541/664db5c8-332a-476c-a5f3-c37251bf4cce)
 1. Realise <b>IComponentReference</b> interface in BaseClass
 2. Get derived ConcreteClass type attached to prefab by <b>GetDerivedComponentType()</b> method.
